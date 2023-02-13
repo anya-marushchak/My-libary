@@ -1,6 +1,8 @@
 from flask import Flask, request, render_template, redirect, url_for
 
 from forms import TodoForm
+from flask_wtf import FlaskForm
+from wtforms import StringField, TextAreaField, BooleanField
 from models import todos
 
 app = Flask(__name__)
